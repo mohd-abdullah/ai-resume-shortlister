@@ -13,8 +13,8 @@ An AI-powered resume shortlisting application that helps recruiters streamline t
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/laravel_cms.git
-   cd laravel_cms
+   git clone https://github.com/mohd-abdullah/ai-resume-shortlister.git
+   cd to project directory
    ```
 
 2. **Install dependencies:**
