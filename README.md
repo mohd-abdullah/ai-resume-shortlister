@@ -33,6 +33,12 @@ An AI-powered resume shortlisting application that helps recruiters streamline t
      php artisan key:generate
      ```
    - Configure your database and other environment variables in the `.env` file.
+   - **Gemini API Key:** This project uses the Gemini API for its AI features. You need to obtain an API key and add it to your `.env` file.
+     - Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+     - Add the following line to your `.env` file:
+       ```
+       GEMINI_API_KEY="your_api_key"
+       ```
 
 4. **Database Migration:**
    ```bash
