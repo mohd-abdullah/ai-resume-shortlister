@@ -24,7 +24,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/', [DashboardController::class, 'index']);
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('jobs', JobController::class);
     Route::post('jobs/{job}/upload-resume', [ResumeController::class, 'store'])->name('resumes.upload');
