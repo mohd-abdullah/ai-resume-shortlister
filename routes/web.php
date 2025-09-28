@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\Settings;
@@ -23,8 +24,8 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', [JobController::class, 'index'])->name('jobs.main');
-    Route::get('/dashboard', [JobController::class, 'index'])->name('dashboard');
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('jobs', JobController::class);
     Route::post('jobs/{job}/upload-resume', [ResumeController::class, 'store'])->name('resumes.upload');
 });
