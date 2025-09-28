@@ -18,9 +18,7 @@
             <input type="file" accept="application/pdf" name="resume" class="w-full rounded border p-2 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200" required>
         </div>
         <div>
-            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm transition-colors hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                Upload
-            </button>
+            <x-button type="primary">{{ __('Upload') }}</x-button>
         </div>
     </form>
 </div>

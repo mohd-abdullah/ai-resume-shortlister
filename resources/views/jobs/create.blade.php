@@ -14,6 +14,6 @@
         <label class="mb-1 block font-medium text-gray-700 dark:text-gray-300">Description</label>
         <textarea name="description" rows="5" class="w-full rounded border p-2 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200" required></textarea>
     </div>
-    <button class="rounded bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700">Save</button>
+    <x-button type="primary">{{ __('Save') }}</x-button>
 </form>
 </x-layouts.app>
